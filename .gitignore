@@ -92,7 +92,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+#dist
 
 # Gatsby files
 .cache/
@@ -134,14 +134,16 @@ dist
 
 # custom added ignores below
 bundle
-dist
+#dist
 node_modules
 TODO
 schema.json
 
 node_modules
-dist
+#dist
 TODO
 coverage
 /generated-types.ts
 /types.ts
+
+.idea

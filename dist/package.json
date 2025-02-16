@@ -1,0 +1,60 @@
+{
+    "name": "ts2typebox",
+    "version": "1.6.1",
+    "description": "Creates TypeBox code from Typescript code",
+    "main": "dist/src/index.js",
+    "source": "dist/src/index.js",
+    "typings": "dist/src/index.d.ts",
+    "bin": {
+        "ts-to-typebox": "dist/src/cli/index.js",
+        "ts2typebox": "dist/src/cli/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch-ts": "tsc -w",
+        "test": "tsc && node --test --test-reporter spec",
+        "start": "node dist/src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xddq/ts2typebox.git"
+    },
+    "keywords": [
+        "JSON schema",
+        "ts2typebox",
+        "ts-to-typebox",
+        "typescript",
+        "typebox",
+        "ts",
+        "validation",
+        "parsing",
+        "IO",
+        "cli"
+    ],
+    "author": "Pierre Dahmani",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/xddq/ts2typebox/issues"
+    },
+    "homepage": "https://github.com/xddq/ts2typebox#readme",
+    "dependencies": {
+        "@sinclair/typebox-codegen": "^0.10.5",
+        "cosmiconfig": "^9.0.0",
+        "minimist": "^1.2.8",
+        "prettier": "^2.8.7",
+        "typescript": "^5.7.3"
+    },
+    "devDependencies": {
+        "@sinclair/typebox": "0.34.25",
+        "@types/minimist": "1.2.5",
+        "@types/node": "18.16.0",
+        "@types/prettier": "2.7.2",
+        "@types/shelljs": "0.8.15",
+        "shelljs": "0.8.5",
+        "tsconfig-paths": "4.2.0"
+    },
+    "peerDependencies": {
+        "@sinclair/typebox": "^0.34.25"
+    },
+    "packageManager": "yarn@3.5.1"
+}
